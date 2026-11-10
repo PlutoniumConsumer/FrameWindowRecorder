@@ -1,0 +1,81 @@
+{
+  "geode": "5.10.1",
+  "gd": {
+    "win": "2.2081"
+  },
+  "id": "plutogdtf-frame-window-counter",
+  "name": "Frame Window Recorder",
+  "version": "v1.0.0",
+  "developer": "PlutoGDTF",
+  "description": "Solo-developed mod that measures frame windows of levels, including many features such as a Recorder, imports/exports from macro files, and many more, perfect for recording frame window showcases.",
+  "settings": {
+    "overlay-scale": {
+      "default": 0.5,
+      "type": "float",
+      "max": 0.85,
+      "name": "HUD text size",
+      "min": 0.25
+    },
+    "intro-seconds": {
+      "default": 3.0,
+      "type": "float",
+      "max": 8.0,
+      "name": "Video / replay intro duration",
+      "min": 1.0
+    },
+    "show-hud": {
+      "default": true,
+      "name": "Show HUD in replay / video",
+      "type": "bool"
+    },
+    "show-intro": {
+      "default": true,
+      "name": "Show intro in replay / video",
+      "type": "bool"
+    },
+    "input-markers": {
+      "type": "bool",
+      "default": true,
+      "name": "Show input position rings (replay/video)"
+    },
+    "window-sounds": {
+      "type": "bool",
+      "default": true,
+      "name": "Frame window ding sounds"
+    },
+    "ui-animations": {
+      "type": "bool",
+      "default": true,
+      "name": "Interface and HUD animations"
+    },
+    "menu-music": {
+      "type": "bool",
+      "default": true,
+      "name": "Recorder menu music"
+    },
+    "ding-volume": {
+      "type": "float",
+      "default": 0.5,
+      "min": 0.0,
+      "max": 1.0,
+      "name": "Frame window ding volume"
+    },
+    "marker-seconds": {
+      "type": "float",
+      "default": 1.5,
+      "min": 0.25,
+      "max": 5.0,
+      "name": "Input ring duration (seconds)"
+    }
+  },
+  "resources": {
+    "files": [
+      "resources/licenses/*.txt",
+      "resources/recorder-icon.png",
+      "resources/window-ding.wav"
+    ]
+  },
+  "incompatibilities": {
+    "independent.open-frame-meter": "*"
+  }
+}
